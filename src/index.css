@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+/* ألوان وخطوط الكافيه. غيريها هون لكل كافيه جديد */
+@theme {
+  --color-teal: #14847f;       /* أخضر ع الطريق */
+  --color-teal-dark: #0e5753;
+  --color-cream: #fbf6ef;
+  --color-sand: #f1e6d6;
+  --color-caramel: #c98b4e;    /* الكراميل */
+  --color-ink: #1d2b2a;        /* النص */
+
+  --font-display: "Reem Kufi", system-ui, sans-serif;
+  --font-sans: "IBM Plex Sans Arabic", system-ui, sans-serif;
+  --font-latin: "Fraunces", Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-cream text-ink font-sans antialiased;
+}
+
+.font-latin {
+  font-variant-numeric: lining-nums;
+}
